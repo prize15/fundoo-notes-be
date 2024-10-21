@@ -1,44 +1,22 @@
 import User from '../models/user.model';
 import { IUser } from '../interfaces/user.interface';
+import bcrypt from 'bcryptjs';
 
 class UserService {
 
-  //get all users
-  public getAllUsers = async (): Promise<IUser[]> => {
-    const data = await User.find();
-    return data;
-  };
+  // Register a new user
+  public registerUser = async (userDetails: IUser): Promise<IUser> => {
+    const existingUser = await User.findOne({ email: userDetails.email });
+    if (existingUser) {
+      throw { code: 400, message: 'User already exists' };
+    }
 
-  //create new user
-  public newUser = async (body: IUser): Promise<IUser> => {
-    const data = await User.create(body);
-    return data;
-  };
+    // Hash the password before saving
+    const hashedPassword = await bcrypt.hash(userDetails.password, 10);
+    userDetails.password = hashedPassword;
 
-  //update a user
-  public updateUser = async (_id: string, body: IUser): Promise<IUser> => {
-    const data = await User.findByIdAndUpdate(
-      {
-        _id
-      },
-      body,
-      {
-        new: true
-      }
-    );
-    return data;
-  };
-
-  //delete a user
-  public deleteUser = async (_id: string): Promise<string> => {
-    await User.findByIdAndDelete(_id);
-    return '';
-  };
-
-  //get a single user
-  public getUser = async (_id: string): Promise<IUser> => {
-    const data = await User.findById(_id);
-    return data;
+    const newUser = await User.create(userDetails);
+    return newUser;
   };
 }
 

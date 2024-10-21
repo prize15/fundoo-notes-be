@@ -2,13 +2,16 @@ import Joi from '@hapi/joi';
 import { Request, Response, NextFunction } from 'express';
 
 class UserValidator {
-  public newUser = (req: Request, res: Response, next: NextFunction): void => {
+  public registerUser = (req: Request, res: Response, next: NextFunction): void => {
     const schema = Joi.object({
-      name: Joi.string().min(4).required()
+      firstname: Joi.string().required(),
+      lastname: Joi.string().required(),
+      email: Joi.string().email().required(),
+      password: Joi.string().min(6).required()
     });
     const { error } = schema.validate(req.body);
     if (error) {
-      next(error);
+      return next({ code: 400, message: error.details[0].message });
     }
     next();
   };
