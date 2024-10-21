@@ -1,0 +1,63 @@
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-10-17T10:34:50.077Z"}
+info: Connected to the database. {"timestamp":"2024-10-17T10:34:52.470Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-10-17T10:37:32.092Z"}
+info: Connected to the database. {"timestamp":"2024-10-17T10:37:32.120Z"}
+error: uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\route.js:216:15)
+    at Function.proto.<computed> [as post] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:521:19)
+    at UserRoutes.routes (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\routes\user.route.ts:16:17)
+    at new UserRoutes (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\routes\user.route.ts:11:10)
+    at routes (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\routes\index.ts:15:24)
+    at App.initializeRoutes (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\index.ts:52:52)
+    at new App (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\index.ts:33:10)
+    at Object.<anonymous> (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\index.ts:74:13)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._compile (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\source-map-support\source-map-support.js:568:25)
+    at Module.m._compile (C:\Users\abhia\AppData\Local\Temp\ts-node-dev-hook-30857200973971755.js:69:33)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at require.extensions..jsx.require.extensions..js (C:\Users\abhia\AppData\Local\Temp\ts-node-dev-hook-30857200973971755.js:114:20)
+    at require.extensions.<computed> (C:\Users\abhia\AppData\Local\Temp\ts-node-dev-hook-30857200973971755.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\ts-node-dev\lib\hook.js:63:13)
+    at Module.load (node:internal/modules/cjs/loader:1208:32) {"date":"Thu Oct 17 2024 16:18:24 GMT+0530 (India Standard Time)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":258912.484},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","./src/index.ts"],"cwd":"C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18396727,"external":20601152,"heapTotal":55754752,"heapUsed":29955592,"rss":75026432},"pid":23260,"uid":null,"version":"v20.15.1"},"stack":"Error: Route.post() requires a callback function but got a [object Undefined]\n    at Route.<computed> [as post] (C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be\\node_modules\\express\\lib\\router\\route.js:216:15)\n    at Function.proto.<computed> [as post] (C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be\\node_modules\\express\\lib\\router\\index.js:521:19)\n    at UserRoutes.routes (C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be\\src\\routes\\user.route.ts:16:17)\n    at new UserRoutes (C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be\\src\\routes\\user.route.ts:11:10)\n    at routes (C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be\\src\\routes\\index.ts:15:24)\n    at App.initializeRoutes (C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be\\src\\index.ts:52:52)\n    at new App (C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be\\src\\index.ts:33:10)\n    at Object.<anonymous> (C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be\\src\\index.ts:74:13)\n    at Module._compile (node:internal/modules/cjs/loader:1358:14)\n    at Module._compile (C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be\\node_modules\\source-map-support\\source-map-support.js:568:25)\n    at Module.m._compile (C:\\Users\\abhia\\AppData\\Local\\Temp\\ts-node-dev-hook-30857200973971755.js:69:33)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\abhia\\AppData\\Local\\Temp\\ts-node-dev-hook-30857200973971755.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\abhia\\AppData\\Local\\Temp\\ts-node-dev-hook-30857200973971755.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)\n    at Module.load (node:internal/modules/cjs/loader:1208:32)","timestamp":"2024-10-17T10:48:24.860Z","trace":[{"column":15,"file":"C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be\\node_modules\\express\\lib\\router\\route.js","function":"Route.<computed> [as post]","line":216,"method":"<computed> [as post]","native":false},{"column":19,"file":"C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be\\node_modules\\express\\lib\\router\\index.js","function":"Function.proto.<computed> [as post]","line":521,"method":"<computed> [as post]","native":false},{"column":17,"file":"C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be\\src\\routes\\user.route.ts","function":"UserRoutes.routes","line":16,"method":"routes","native":false},{"column":10,"file":"C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be\\src\\routes\\user.route.ts","function":"new UserRoutes","line":11,"method":null,"native":false},{"column":24,"file":"C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be\\src\\routes\\index.ts","function":"routes","line":15,"method":null,"native":false},{"column":52,"file":"C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be\\src\\index.ts","function":"App.initializeRoutes","line":52,"method":"initializeRoutes","native":false},{"column":10,"file":"C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be\\src\\index.ts","function":"new App","line":33,"method":null,"native":false},{"column":13,"file":"C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be\\src\\index.ts","function":null,"line":74,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1358,"method":"_compile","native":false},{"column":25,"file":"C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be\\node_modules\\source-map-support\\source-map-support.js","function":"Module._compile","line":568,"method":"_compile","native":false},{"column":33,"file":"C:\\Users\\abhia\\AppData\\Local\\Temp\\ts-node-dev-hook-30857200973971755.js","function":"Module.m._compile","line":69,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1416,"method":".js","native":false},{"column":20,"file":"C:\\Users\\abhia\\AppData\\Local\\Temp\\ts-node-dev-hook-30857200973971755.js","function":"require.extensions..jsx.require.extensions..js","line":114,"method":".js","native":false},{"column":20,"file":"C:\\Users\\abhia\\AppData\\Local\\Temp\\ts-node-dev-hook-30857200973971755.js","function":"require.extensions.<computed>","line":71,"method":"<computed>","native":false},{"column":13,"file":"C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be\\node_modules\\ts-node-dev\\lib\\hook.js","function":"Object.nodeDevHook [as .ts]","line":63,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1208,"method":"load","native":false}]}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-10-17T11:45:06.570Z"}
+info: Connected to the database. {"timestamp":"2024-10-17T11:45:06.597Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-10-20T14:03:18.206Z"}
+info: Connected to the database. {"timestamp":"2024-10-20T14:03:18.233Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-10-21T17:51:59.599Z"}
+info: Connected to the database. {"timestamp":"2024-10-21T17:51:59.627Z"}
+error: 
+      status - 401
+      message - Invalid email or password 
+      url - /api/v1/users/login 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-10-21T17:57:20.516Z"}
+error: 
+      status - 400
+      message - User already exists 
+      url - /api/v1/users/register 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-10-21T17:57:33.322Z"}
+error: 
+      status - 401
+      message - Invalid email or password 
+      url - /api/v1/users/login 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-10-21T18:00:48.036Z"}
+error: 
+      status - 401
+      message - Invalid email or password 
+      url - /api/v1/users/login 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-10-21T18:00:54.018Z"}
+error: 
+      status - 400
+      message - User already exists 
+      url - /api/v1/users/register 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-10-21T18:01:04.107Z"}

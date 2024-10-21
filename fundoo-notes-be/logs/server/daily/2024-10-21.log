@@ -1,0 +1,37 @@
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-10-21T17:51:59.599Z"}
+info: Connected to the database. {"timestamp":"2024-10-21T17:51:59.627Z"}
+error: 
+      status - 401
+      message - Invalid email or password 
+      url - /api/v1/users/login 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-10-21T17:57:20.516Z"}
+error: 
+      status - 400
+      message - User already exists 
+      url - /api/v1/users/register 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-10-21T17:57:33.322Z"}
+error: 
+      status - 401
+      message - Invalid email or password 
+      url - /api/v1/users/login 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-10-21T18:00:48.036Z"}
+error: 
+      status - 401
+      message - Invalid email or password 
+      url - /api/v1/users/login 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-10-21T18:00:54.018Z"}
+error: 
+      status - 400
+      message - User already exists 
+      url - /api/v1/users/register 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-10-21T18:01:04.107Z"}
