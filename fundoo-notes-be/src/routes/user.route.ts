@@ -14,6 +14,9 @@ class UserRoutes {
   private routes = () => {
     // Registration route
     this.router.post('/register', this.userValidator.registerUser, this.userController.registerUser);
+
+    // Login route
+    this.router.post('/login', this.userValidator.loginUser, this.userController.loginUser);
   };
 
   public getRoutes = (): IRouter => {
