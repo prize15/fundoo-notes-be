@@ -61,3 +61,139 @@ error:
       method - POST 
       IP - ::1
      {"timestamp":"2024-10-21T18:01:04.107Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-10-21T18:16:25.721Z"}
+info: Connected to the database. {"timestamp":"2024-10-21T18:16:25.753Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/notes 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-10-21T18:17:18.256Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-10-22T05:37:25.076Z"}
+info: Connected to the database. {"timestamp":"2024-10-22T05:37:25.123Z"}
+error: 
+    status - 500 
+    message - SyntaxError: Expected double-quoted property name in JSON at position 43
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\body-parser\lib\types\json.js:92:19)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:519:28)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) 
+    url - /api/v1/users/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-10-22T05:40:35.255Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\jsonwebtoken\verify.js:53:17)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:28:37
+    at Generator.next (<anonymous>)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:4:12)
+    at userAuth (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:18:20)
+    at Layer.handle [as handle_request] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:47:12) 
+    url - /api/v1/notes 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-10-22T05:44:47.020Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\jsonwebtoken\verify.js:53:17)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:28:37
+    at Generator.next (<anonymous>)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:4:12)
+    at userAuth (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:18:20)
+    at Layer.handle [as handle_request] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:47:12) 
+    url - /api/v1/notes 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-10-22T05:45:59.566Z"}
+error: 
+    status - 500 
+    message - ValidationError: Note validation failed: userId: Cast to ObjectId failed for value "1" (type string) at path "userId"
+    at model.Document.invalidate (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\document.js:2788:32)
+    at model.$set (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\document.js:1355:12)
+    at model.$set (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\document.js:1062:16)
+    at model.Document (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\document.js:148:12)
+    at model.Model (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\model.js:106:12)
+    at new model (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\model.js:4919:15)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\model.js:3165:22
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\model.js:3201:7
+    at Array.forEach (<anonymous>)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\model.js:3200:15
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+    at Mongoose._promiseOrCallback (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\index.js:1149:10)
+    at Function.create (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\model.js:3135:23)
+    at NoteService.<anonymous> (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\services\note.service.ts:12:23) 
+    url - /api/v1/notes 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-10-22T05:46:09.509Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-11-05T10:04:13.117Z"}
+info: Connected to the database. {"timestamp":"2024-11-05T10:04:13.148Z"}
+error: 
+      status - 400
+      message - "firstname" is required 
+      url - /api/v1/users/register 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-11-05T10:06:05.681Z"}
+error: 
+      status - 401
+      message - Invalid email or password 
+      url - /api/v1/users/login 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-11-05T10:08:57.770Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-11-05T17:27:18.514Z"}
+info: Connected to the database. {"timestamp":"2024-11-05T17:27:18.551Z"}
+error: 
+      status - 401
+      message - Invalid email or password 
+      url - /api/v1/users/login 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-11-05T17:30:58.996Z"}
+error: 
+      status - 401
+      message - Invalid email or password 
+      url - /api/v1/users/login 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-11-05T17:31:13.389Z"}
+error: 
+      status - 401
+      message - Invalid email or password 
+      url - /api/v1/users/login 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-11-05T17:31:24.549Z"}
