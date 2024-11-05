@@ -1,0 +1,39 @@
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-11-05T10:04:13.117Z"}
+info: Connected to the database. {"timestamp":"2024-11-05T10:04:13.148Z"}
+error: 
+      status - 400
+      message - "firstname" is required 
+      url - /api/v1/users/register 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-11-05T10:06:05.681Z"}
+error: 
+      status - 401
+      message - Invalid email or password 
+      url - /api/v1/users/login 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-11-05T10:08:57.770Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-11-05T17:27:18.514Z"}
+info: Connected to the database. {"timestamp":"2024-11-05T17:27:18.551Z"}
+error: 
+      status - 401
+      message - Invalid email or password 
+      url - /api/v1/users/login 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-11-05T17:30:58.996Z"}
+error: 
+      status - 401
+      message - Invalid email or password 
+      url - /api/v1/users/login 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-11-05T17:31:13.389Z"}
+error: 
+      status - 401
+      message - Invalid email or password 
+      url - /api/v1/users/login 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-11-05T17:31:24.549Z"}
