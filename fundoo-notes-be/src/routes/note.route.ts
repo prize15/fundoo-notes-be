@@ -12,7 +12,9 @@ class NoteRoutes {
 
   private routes = () => {
     // Get all notes for a user
-    this.router.get('/:userId', userAuth, this.noteController.getAllNotes);
+    this.router.get('', userAuth, this.noteController.getAllNotes);
+    // Route to get a note by ID
+    this.router.get('/:_id', userAuth, this.noteController.getNoteById);
 
     // Create a new note
     this.router.post('', userAuth, this.noteController.createNote);

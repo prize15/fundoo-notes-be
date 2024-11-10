@@ -197,3 +197,73 @@ error:
       method - POST 
       IP - ::1
      {"timestamp":"2024-11-05T17:31:24.549Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-11-07T05:43:17.146Z"}
+info: Connected to the database. {"timestamp":"2024-11-07T05:43:17.191Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-11-07T05:50:26.424Z"}
+info: Connected to the database. {"timestamp":"2024-11-07T05:50:26.457Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-11-07T05:50:37.449Z"}
+info: Connected to the database. {"timestamp":"2024-11-07T05:50:37.482Z"}
+error: 
+    status - 500 
+    message - ValidationError: Note validation failed: userId: Path `userId` is required.
+    at model.Document.invalidate (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\document.js:2788:32)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\document.js:2580:17
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\schematype.js:1273:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11) 
+    url - /api/v1/notes 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-11-07T05:53:56.259Z"}
+error: 
+    status - 500 
+    message - ValidationError: Note validation failed: userId: Path `userId` is required.
+    at model.Document.invalidate (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\document.js:2788:32)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\document.js:2580:17
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\schematype.js:1273:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11) 
+    url - /api/v1/notes 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-11-07T05:53:57.940Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-11-07T05:56:04.572Z"}
+info: Connected to the database. {"timestamp":"2024-11-07T05:56:04.602Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-11-10T09:11:05.386Z"}
+info: Connected to the database. {"timestamp":"2024-11-10T09:11:05.421Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-11-10T09:20:30.330Z"}
+info: Connected to the database. {"timestamp":"2024-11-10T09:20:30.369Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-11-10T09:21:02.505Z"}
+info: Connected to the database. {"timestamp":"2024-11-10T09:21:02.551Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-11-10T09:23:40.817Z"}
+info: Connected to the database. {"timestamp":"2024-11-10T09:23:40.854Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-11-10T09:35:02.392Z"}
+info: Connected to the database. {"timestamp":"2024-11-10T09:35:02.424Z"}
+error: 
+      status - 401
+      message - Invalid email or password 
+      url - /api/v1/users/login 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-11-10T09:35:54.115Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-11-10T10:01:29.254Z"}
+info: Connected to the database. {"timestamp":"2024-11-10T10:01:29.290Z"}
+error: 
+      status - 400
+      message - "firstname" is required 
+      url - /api/v1/users/register 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-11-10T10:16:29.270Z"}
+error: 
+      status - 400
+      message - "firstname" is required 
+      url - /api/v1/users/register 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-11-10T10:17:06.974Z"}
+error: 
+      status - 400
+      message - "firstname" is required 
+      url - /api/v1/users/register 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-11-10T10:18:11.107Z"}

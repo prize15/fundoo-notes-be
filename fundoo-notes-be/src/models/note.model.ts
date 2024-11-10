@@ -3,11 +3,11 @@ import { INote } from '../interfaces/note.interface';
 
 const noteSchema = new Schema<INote>(
   {
-    userId: {
+   /* userId: {
       type: Schema.Types.ObjectId,
       ref: 'User',
       required: true,
-    },
+    },*/
     title: {
       type: String,
       required: true,

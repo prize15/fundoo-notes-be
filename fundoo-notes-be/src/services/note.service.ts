@@ -11,7 +11,10 @@ class NoteService {
   public createNote = async (noteData: INote): Promise<INote> => {
     return await Note.create(noteData);
   };
-
+  // Get Note by ID
+  public getNoteById = async (noteId: string): Promise<INote | null> => {
+    return await Note.findById(noteId);
+  };
   // Update a note
   public updateNote = async (noteId: string, noteData: Partial<INote>): Promise<INote | null> => {
     return await Note.findByIdAndUpdate(noteId, noteData, { new: true });

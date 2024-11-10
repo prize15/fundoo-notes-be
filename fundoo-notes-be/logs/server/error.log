@@ -179,3 +179,53 @@ error:
       method - POST 
       IP - ::1
      {"timestamp":"2024-11-05T17:31:24.549Z"}
+error: 
+    status - 500 
+    message - ValidationError: Note validation failed: userId: Path `userId` is required.
+    at model.Document.invalidate (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\document.js:2788:32)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\document.js:2580:17
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\schematype.js:1273:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11) 
+    url - /api/v1/notes 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-11-07T05:53:56.259Z"}
+error: 
+    status - 500 
+    message - ValidationError: Note validation failed: userId: Path `userId` is required.
+    at model.Document.invalidate (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\document.js:2788:32)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\document.js:2580:17
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\schematype.js:1273:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11) 
+    url - /api/v1/notes 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-11-07T05:53:57.940Z"}
+error: 
+      status - 401
+      message - Invalid email or password 
+      url - /api/v1/users/login 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-11-10T09:35:54.115Z"}
+error: 
+      status - 400
+      message - "firstname" is required 
+      url - /api/v1/users/register 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-11-10T10:16:29.270Z"}
+error: 
+      status - 400
+      message - "firstname" is required 
+      url - /api/v1/users/register 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-11-10T10:17:06.974Z"}
+error: 
+      status - 400
+      message - "firstname" is required 
+      url - /api/v1/users/register 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-11-10T10:18:11.107Z"}
