@@ -1,0 +1,40 @@
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-11-10T09:11:05.386Z"}
+info: Connected to the database. {"timestamp":"2024-11-10T09:11:05.421Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-11-10T09:20:30.330Z"}
+info: Connected to the database. {"timestamp":"2024-11-10T09:20:30.369Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-11-10T09:21:02.505Z"}
+info: Connected to the database. {"timestamp":"2024-11-10T09:21:02.551Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-11-10T09:23:40.817Z"}
+info: Connected to the database. {"timestamp":"2024-11-10T09:23:40.854Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-11-10T09:35:02.392Z"}
+info: Connected to the database. {"timestamp":"2024-11-10T09:35:02.424Z"}
+error: 
+      status - 401
+      message - Invalid email or password 
+      url - /api/v1/users/login 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-11-10T09:35:54.115Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-11-10T10:01:29.254Z"}
+info: Connected to the database. {"timestamp":"2024-11-10T10:01:29.290Z"}
+error: 
+      status - 400
+      message - "firstname" is required 
+      url - /api/v1/users/register 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-11-10T10:16:29.270Z"}
+error: 
+      status - 400
+      message - "firstname" is required 
+      url - /api/v1/users/register 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-11-10T10:17:06.974Z"}
+error: 
+      status - 400
+      message - "firstname" is required 
+      url - /api/v1/users/register 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-11-10T10:18:11.107Z"}

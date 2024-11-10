@@ -8,14 +8,29 @@ class NoteController {
   // Get all notes for a specific user
   public getAllNotes = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {
-      const userId = req.params.userId; // Assume userId is passed as a route parameter
+      console.log("User authenticated, fetching notes...");
+      const userId = res.locals.user._id;
       const notes = await this.noteService.getAllNotes(userId);
+      console.log("Notes fetched successfully:", notes);
       res.status(200).json(notes);
     } catch (error) {
       next(error);
     }
   };
-
+  // Get note by note ID
+  public getNoteById = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+    try {
+      const noteId = req.params._id;
+      const note = await this.noteService.getNoteById(noteId);
+      if (!note) {
+        return res.status(404).json({ code: 404, message: 'Note not found' });
+      }
+      res.status(200).json(note);
+    } catch (error) {
+      next(error);
+    }
+  };
+  
   // Create a new note
   public createNote = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     try {

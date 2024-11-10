@@ -1,3 +1,5 @@
+
+
 import dotenv from 'dotenv';
 dotenv.config();
 
@@ -11,6 +13,7 @@ import ErrorHandler from './middlewares/error.middleware';
 import Logger from './config/logger';
 
 import morgan from 'morgan';
+
 
 class App {
   public app: Application;
