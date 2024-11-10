@@ -229,3 +229,147 @@ error:
       method - POST 
       IP - ::1
      {"timestamp":"2024-11-10T10:18:11.107Z"}
+error: 
+    status - 500 
+    message - Error: Failed to send email
+    at MailerService.<anonymous> (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\services\mailer.service.ts:31:13)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\services\mailer.service.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/forgot-password 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-11-10T11:42:48.007Z"}
+error: 
+    status - 500 
+    message - Error: Failed to send email
+    at MailerService.<anonymous> (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\services\mailer.service.ts:31:13)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\services\mailer.service.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/forgot-password 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-11-10T11:54:25.800Z"}
+error: 
+    status - 500 
+    message - Error: Failed to send email
+    at MailerService.<anonymous> (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\services\mailer.service.ts:31:13)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\services\mailer.service.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/forgot-password 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-11-10T11:54:40.063Z"}
+error: 
+    status - 500 
+    message - Error: Failed to send email
+    at MailerService.<anonymous> (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\services\mailer.service.ts:31:13)
+    at Generator.throw (<anonymous>)
+    at rejected (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\services\mailer.service.ts:6:65)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/users/forgot-password 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-11-10T11:55:16.800Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\jsonwebtoken\verify.js:53:17)
+    at UserController.<anonymous> (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\controllers\user.controller.ts:99:32)
+    at Generator.next (<anonymous>)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\controllers\user.controller.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\controllers\user.controller.ts:4:12)
+    at UserController.resetPassword (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\controllers\user.controller.ts:94:99)
+    at Layer.handle [as handle_request] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:280:10) 
+    url - /api/v1/users/reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzJjNTU5ZWM0NDEyNzY4YTQ2MzI1Y2EiLCJpYXQiOjE3MzEyNDM3MjAsImV4cCI6MTczMTI0NzMyMH0._jKOG6iE2aPLCpkGgpBWFKormnzgvEOAe1ElgO_dq-M 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-11-10T13:03:25.627Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\jsonwebtoken\verify.js:53:17)
+    at UserController.<anonymous> (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\controllers\user.controller.ts:99:32)
+    at Generator.next (<anonymous>)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\controllers\user.controller.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\controllers\user.controller.ts:4:12)
+    at UserController.resetPassword (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\controllers\user.controller.ts:94:99)
+    at Layer.handle [as handle_request] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:280:10) 
+    url - /api/v1/users/reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzJjNTU5ZWM0NDEyNzY4YTQ2MzI1Y2EiLCJpYXQiOjE3MzEyNDM3MjAsImV4cCI6MTczMTI0NzMyMH0._jKOG6iE2aPLCpkGgpBWFKormnzgvEOAe1ElgO_dq-M 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-11-10T13:05:03.742Z"}
+error: 
+    status - 500 
+    message - SyntaxError: Bad control character in string literal in JSON at position 190
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\body-parser\lib\types\json.js:92:19)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:519:28)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) 
+    url - /api/v1/users/reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzJjNTU5ZWM0NDEyNzY4YTQ2MzI1Y2EiLCJpYXQiOjE3MzEyNDM3MjAsImV4cCI6MTczMTI0NzMyMH0._jKOG6iE2aPLCpkGgpBWFKormnzgvEOAe1ElgO_dq-M 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-11-10T13:05:37.701Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt must be provided
+    at Object.module.exports [as verify] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\jsonwebtoken\verify.js:53:17)
+    at UserController.<anonymous> (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\controllers\user.controller.ts:99:32)
+    at Generator.next (<anonymous>)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\controllers\user.controller.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\controllers\user.controller.ts:4:12)
+    at UserController.resetPassword (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\controllers\user.controller.ts:94:99)
+    at Layer.handle [as handle_request] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:280:10) 
+    url - /api/v1/users/reset-password/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzMwNzk4M2MzMWZlZjYxMmM5ZGI3NjciLCJpYXQiOjE3MzEyNDQ0OTYsImV4cCI6MTczMTI0ODA5Nn0.zGEklvn-dzAInok-Bb5z1bsEr2PZebL9phloSw5oly0 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-11-10T13:16:57.622Z"}
+error: 
+      status - 401
+      message - Invalid email or password 
+      url - /api/v1/users/login 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-11-10T13:18:20.381Z"}
+error: 
+      status - 400
+      message - "firstname" is required 
+      url - /api/v1/users/register 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-11-10T13:18:53.071Z"}

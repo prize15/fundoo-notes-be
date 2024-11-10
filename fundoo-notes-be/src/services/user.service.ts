@@ -76,6 +76,23 @@ class UserService {
     }
     return 'User deleted successfully';
   };
+   // Get user by email
+   public getUserByEmail = async (email: string): Promise<IUser | null> => {
+    return await User.findOne({ email });
+  };
+
+  // Get user by ID
+  public getUserById = async (_id: string): Promise<IUser | null> => {
+    return await User.findById(_id);
+  };
+
+  // Update user password
+  public updateUserPassword = async (_id: string, newPassword: string): Promise<IUser | null> => {
+    return await User.findByIdAndUpdate(_id, { password: newPassword }, { new: true });
+  };
+
+
+
 }
 
 export default UserService;

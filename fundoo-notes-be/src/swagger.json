@@ -64,6 +64,74 @@
         }
       }
     },
+        "/forgot-password": {
+          "post": {
+            "tags": ["Users"],
+            "summary": "Forgot Password",
+            "description": "Send a reset password email to the user.",
+            "requestBody": {
+              "required": true,
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "email": {
+                        "type": "string",
+                        "example": "user@example.com"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "responses": {
+              "200": {
+                "description": "Password reset link sent successfully."
+              },
+              "404": {
+                "description": "User not found."
+              }
+            }
+          }
+        },
+        "/reset-password": {
+          "post": {
+            "tags": ["Users"],
+            "summary": "Reset Password",
+            "description": "Reset the user's password using the token received via email.",
+            "requestBody": {
+              "required": true,
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "token": {
+                        "type": "string",
+                        "example": "reset-token"
+                      },
+                      "newPassword": {
+                        "type": "string",
+                        "example": "newpassword123"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "responses": {
+              "200": {
+                "description": "Password reset successfully."
+              },
+              "404": {
+                "description": "User not found."
+              }
+            }
+          }
+        },
+  
+    
     "/notes": {
       "get": {
         "tags": ["Notes"],
