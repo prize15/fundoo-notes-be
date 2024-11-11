@@ -1,0 +1,60 @@
+info: ::1 - - [11/Nov/2024:09:13:58 +0000] "GET /api/v1/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+
+info: ::1 - - [11/Nov/2024:09:13:59 +0000] "GET /favicon.ico HTTP/1.1" 404 47 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+
+info: ::1 - - [11/Nov/2024:09:14:01 +0000] "GET /api/v1//api/docs/ HTTP/1.1" 200 3106 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+
+info: ::1 - - [11/Nov/2024:09:14:01 +0000] "GET /api/v1//api/docs/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+
+info: ::1 - - [11/Nov/2024:09:14:01 +0000] "GET /api/v1//api/docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+
+info: ::1 - - [11/Nov/2024:09:14:01 +0000] "GET /api/v1//api/docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+
+info: ::1 - - [11/Nov/2024:09:14:01 +0000] "GET /api/v1//api/docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+
+info: ::1 - - [11/Nov/2024:09:14:02 +0000] "GET /api/v1//api/docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+
+info: ::1 - - [11/Nov/2024:09:22:38 +0000] "GET /api/v1/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+
+info: ::1 - - [11/Nov/2024:09:22:38 +0000] "GET /favicon.ico HTTP/1.1" 404 47 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:36:14 +0000] "POST /api/v1/users/login HTTP/1.1" 401 50 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:36:14 +0000] "POST /api/v1/users/register HTTP/1.1" 400 50 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:36:14 +0000] "POST /api/v1/users/login HTTP/1.1" 401 50 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:36:14 +0000] "GET /api/v1/users HTTP/1.1" 404 47 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:40:28 +0000] "POST /api/v1/users/login HTTP/1.1" 401 50 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:40:28 +0000] "POST /api/v1/users/register HTTP/1.1" 400 50 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:40:28 +0000] "POST /api/v1/users/login HTTP/1.1" 401 50 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:40:28 +0000] "GET /api/v1/users HTTP/1.1" 404 47 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:44:34 +0000] "POST /api/v1/users/login HTTP/1.1" 401 50 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:44:34 +0000] "POST /api/v1/users/register HTTP/1.1" 400 50 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:44:34 +0000] "POST /api/v1/users/login HTTP/1.1" 401 50 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:44:34 +0000] "GET /api/v1/users HTTP/1.1" 404 47 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:45:37 +0000] "POST /api/v1/users/login HTTP/1.1" 401 50 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:45:37 +0000] "POST /api/v1/users/register HTTP/1.1" 400 50 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:45:37 +0000] "POST /api/v1/users/login HTTP/1.1" 401 50 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:45:37 +0000] "GET /api/v1/users HTTP/1.1" 404 47 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:46:59 +0000] "POST /api/v1/users/login HTTP/1.1" 401 50 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:46:59 +0000] "POST /api/v1/users/register HTTP/1.1" 400 50 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:46:59 +0000] "POST /api/v1/users/login HTTP/1.1" 401 50 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:46:59 +0000] "GET /api/v1/users HTTP/1.1" 404 47 "-" "node-superagent/3.8.3"
+

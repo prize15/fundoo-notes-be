@@ -1,5 +1,3 @@
-
-
 import dotenv from 'dotenv';
 dotenv.config();
 
@@ -14,13 +12,12 @@ import Logger from './config/logger';
 
 import morgan from 'morgan';
 
-
 class App {
   public app: Application;
   public host: string | number;
   public port: string | number;
   public api_version: string | number;
-  public env: boolean;
+  public env: boolean = false;
   private db = new Database();
   private logStream = Logger.logStream;
   private logger = Logger.logger;
@@ -28,15 +25,19 @@ class App {
 
   constructor() {
     this.app = express();
-    this.host = process.env.APP_HOST;
-    this.port = process.env.APP_PORT;
-    this.api_version = process.env.API_VERSION;
+    this.host = process.env.APP_HOST as string;
+    this.port = process.env.APP_PORT as string;
+    this.api_version = process.env.API_VERSION as string;
 
     this.initializeMiddleWares();
     this.initializeRoutes();
     this.initializeDatabase();
     this.initializeErrorHandlers();
-    this.startApp();
+
+    // Only start the server if we are not in a test environment
+    if (process.env.NODE_ENV !== 'test') {
+      this.startApp();
+    }
   }
 
   public initializeMiddleWares(): void {
@@ -74,6 +75,8 @@ class App {
   }
 }
 
+// Create an instance of the app
 const app = new App();
 
-export default app;
+// Export the app instance for testing purposes
+export default app.getApp();

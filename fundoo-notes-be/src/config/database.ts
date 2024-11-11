@@ -6,11 +6,18 @@ class Database {
   private logger;
 
   constructor() {
-    // Replace database value in the .env file with your database config url
-    this.DATABASE =
-      process.env.NODE_ENV === 'test'
-        ? process.env.DATABASE_TEST
-        : process.env.DATABASE;
+    // Ensure DATABASE_URL is always defined
+    if (process.env.NODE_ENV === 'test') {
+      this.DATABASE = process.env.DATABASE_TEST!;
+      if (!this.DATABASE) {
+        throw new Error('DATABASE_TEST environment variable is missing!');
+      }
+    } else {
+      this.DATABASE = process.env.DATABASE!;
+      if (!this.DATABASE) {
+        throw new Error('DATABASE environment variable is missing!');
+      }
+    }
 
     this.logger = Logger.logger;
   }
@@ -29,4 +36,5 @@ class Database {
     }
   };
 }
+
 export default Database;
