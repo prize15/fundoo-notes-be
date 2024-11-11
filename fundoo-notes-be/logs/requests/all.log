@@ -804,3 +804,103 @@ info: ::1 - - [10/Nov/2024:13:19:26 +0000] "POST /api/v1/notes HTTP/1.1" 201 193
 
 info: ::1 - - [10/Nov/2024:13:20:18 +0000] "PUT /api/v1/notes/67307c1dbe38cf45b4f5bee7 HTTP/1.1" 200 193 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
 
+info: ::1 - - [11/Nov/2024:09:13:58 +0000] "GET /api/v1/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+
+info: ::1 - - [11/Nov/2024:09:13:59 +0000] "GET /favicon.ico HTTP/1.1" 404 47 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+
+info: ::1 - - [11/Nov/2024:09:14:01 +0000] "GET /api/v1//api/docs/ HTTP/1.1" 200 3106 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+
+info: ::1 - - [11/Nov/2024:09:14:01 +0000] "GET /api/v1//api/docs/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+
+info: ::1 - - [11/Nov/2024:09:14:01 +0000] "GET /api/v1//api/docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+
+info: ::1 - - [11/Nov/2024:09:14:01 +0000] "GET /api/v1//api/docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+
+info: ::1 - - [11/Nov/2024:09:14:01 +0000] "GET /api/v1//api/docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+
+info: ::1 - - [11/Nov/2024:09:14:02 +0000] "GET /api/v1//api/docs/favicon-32x32.png HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+
+info: ::1 - - [11/Nov/2024:09:22:38 +0000] "GET /api/v1/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+
+info: ::1 - - [11/Nov/2024:09:22:38 +0000] "GET /favicon.ico HTTP/1.1" 404 47 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:36:14 +0000] "POST /api/v1/users/login HTTP/1.1" 401 50 "-" "node-superagent/3.8.3"
+
+error: uncaughtException: expected '"firstname" is required' to equal 'User registered successfully'
+AssertionError: expected '"firstname" is required' to equal 'User registered successfully'
+    at Test.<anonymous> (test\user.test.ts:23:37)
+    at Test.assert (node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:633:28)
+    at Server.emit (node:events:519:28)
+    at Server.emit (node:domain:488:12)
+    at emitCloseNT (node:net:2321:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21) {"date":"Mon Nov 11 2024 15:06:14 GMT+0530 (India Standard Time)","error":{"actual":"\"firstname\" is required","expected":"User registered successfully","message":"expected '\"firstname\" is required' to equal 'User registered successfully'","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected '\"firstname\" is required' to equal 'User registered successfully'\n    at Test.<anonymous> (test\\user.test.ts:23:37)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:633:28)\n    at Server.emit (node:events:519:28)\n    at Server.emit (node:domain:488:12)\n    at emitCloseNT (node:net:2321:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)","uncaught":true},"exception":true,"os":{"loadavg":[0,0,0],"uptime":74948.015},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be\\node_modules\\mocha\\bin\\mocha","-r","ts-node/register","test/**/*.ts"],"cwd":"C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":22914012,"external":25909681,"heapTotal":266702848,"heapUsed":232291192,"rss":317005824},"pid":13552,"uid":null,"version":"v20.15.1"},"stack":"AssertionError: expected '\"firstname\" is required' to equal 'User registered successfully'\n    at Test.<anonymous> (test\\user.test.ts:23:37)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:633:28)\n    at Server.emit (node:events:519:28)\n    at Server.emit (node:domain:488:12)\n    at emitCloseNT (node:net:2321:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)","trace":[{"column":37,"file":"test\\user.test.ts","function":null,"line":23,"method":null,"native":false},{"column":6,"file":"node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":633,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":519,"method":"emit","native":false},{"column":12,"file":"node:domain","function":"Server.emit","line":488,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":2321,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":81,"method":null,"native":false}]}
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:36:14 +0000] "POST /api/v1/users/register HTTP/1.1" 400 50 "-" "node-superagent/3.8.3"
+
+error: uncaughtException: expected '"firstname" is required' to equal 'User registered successfully'
+AssertionError: expected '"firstname" is required' to equal 'User registered successfully'
+    at Test.<anonymous> (test\user.test.ts:23:37)
+    at Test.assert (node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:633:28)
+    at Server.emit (node:events:519:28)
+    at Server.emit (node:domain:488:12)
+    at emitCloseNT (node:net:2321:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21) {"date":"Mon Nov 11 2024 15:06:14 GMT+0530 (India Standard Time)","error":{"actual":"\"firstname\" is required","expected":"User registered successfully","message":"expected '\"firstname\" is required' to equal 'User registered successfully'","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected '\"firstname\" is required' to equal 'User registered successfully'\n    at Test.<anonymous> (test\\user.test.ts:23:37)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:633:28)\n    at Server.emit (node:events:519:28)\n    at Server.emit (node:domain:488:12)\n    at emitCloseNT (node:net:2321:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)","uncaught":true},"exception":true,"os":{"loadavg":[0,0,0],"uptime":74948.015},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be\\node_modules\\mocha\\bin\\mocha","-r","ts-node/register","test/**/*.ts"],"cwd":"C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":22922204,"external":25917873,"heapTotal":266702848,"heapUsed":232342528,"rss":317009920},"pid":13552,"uid":null,"version":"v20.15.1"},"stack":"AssertionError: expected '\"firstname\" is required' to equal 'User registered successfully'\n    at Test.<anonymous> (test\\user.test.ts:23:37)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:633:28)\n    at Server.emit (node:events:519:28)\n    at Server.emit (node:domain:488:12)\n    at emitCloseNT (node:net:2321:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)","trace":[{"column":37,"file":"test\\user.test.ts","function":null,"line":23,"method":null,"native":false},{"column":6,"file":"node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":633,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":519,"method":"emit","native":false},{"column":12,"file":"node:domain","function":"Server.emit","line":488,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":2321,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":81,"method":null,"native":false}]}
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:36:14 +0000] "POST /api/v1/users/login HTTP/1.1" 401 50 "-" "node-superagent/3.8.3"
+
+error: uncaughtException: expected { code: 401, …(1) } to have property 'token'
+AssertionError: expected { code: 401, …(1) } to have property 'token'
+    at Test.<anonymous> (test\user.test.ts:40:34)
+    at Test.assert (node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:633:28)
+    at Server.emit (node:events:519:28)
+    at Server.emit (node:domain:488:12)
+    at emitCloseNT (node:net:2321:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21) {"date":"Mon Nov 11 2024 15:06:14 GMT+0530 (India Standard Time)","error":{"actual":{"code":401,"message":"Invalid email or password"},"message":"expected { code: 401, …(1) } to have property 'token'","name":"AssertionError","showDiff":false,"stack":"AssertionError: expected { code: 401, …(1) } to have property 'token'\n    at Test.<anonymous> (test\\user.test.ts:40:34)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:633:28)\n    at Server.emit (node:events:519:28)\n    at Server.emit (node:domain:488:12)\n    at emitCloseNT (node:net:2321:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)","uncaught":true},"exception":true,"os":{"loadavg":[0,0,0],"uptime":74948.046},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be\\node_modules\\mocha\\bin\\mocha","-r","ts-node/register","test/**/*.ts"],"cwd":"C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":22923589,"external":25919258,"heapTotal":266964992,"heapUsed":233088568,"rss":317272064},"pid":13552,"uid":null,"version":"v20.15.1"},"stack":"AssertionError: expected { code: 401, …(1) } to have property 'token'\n    at Test.<anonymous> (test\\user.test.ts:40:34)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:633:28)\n    at Server.emit (node:events:519:28)\n    at Server.emit (node:domain:488:12)\n    at emitCloseNT (node:net:2321:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)","trace":[{"column":34,"file":"test\\user.test.ts","function":null,"line":40,"method":null,"native":false},{"column":6,"file":"node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":633,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":519,"method":"emit","native":false},{"column":12,"file":"node:domain","function":"Server.emit","line":488,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":2321,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":81,"method":null,"native":false}]}
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:36:14 +0000] "GET /api/v1/users HTTP/1.1" 404 47 "-" "node-superagent/3.8.3"
+
+error: uncaughtException: expected { code: 404, …(1) } to be an array
+AssertionError: expected { code: 404, …(1) } to be an array
+    at Test.<anonymous> (test\user.test.ts:53:32)
+    at Test.assert (node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:633:28)
+    at Server.emit (node:events:519:28)
+    at Server.emit (node:domain:488:12)
+    at emitCloseNT (node:net:2321:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21) {"date":"Mon Nov 11 2024 15:06:14 GMT+0530 (India Standard Time)","error":{"actual":{"code":404,"message":"Ooops, route not found"},"message":"expected { code: 404, …(1) } to be an array","name":"AssertionError","operator":"strictEqual","showDiff":false,"stack":"AssertionError: expected { code: 404, …(1) } to be an array\n    at Test.<anonymous> (test\\user.test.ts:53:32)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:633:28)\n    at Server.emit (node:events:519:28)\n    at Server.emit (node:domain:488:12)\n    at emitCloseNT (node:net:2321:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)","uncaught":true},"exception":true,"os":{"loadavg":[0,0,0],"uptime":74948.078},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be\\node_modules\\mocha\\bin\\mocha","-r","ts-node/register","test/**/*.ts"],"cwd":"C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":22932685,"external":25928354,"heapTotal":266964992,"heapUsed":233774472,"rss":317317120},"pid":13552,"uid":null,"version":"v20.15.1"},"stack":"AssertionError: expected { code: 404, …(1) } to be an array\n    at Test.<anonymous> (test\\user.test.ts:53:32)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:633:28)\n    at Server.emit (node:events:519:28)\n    at Server.emit (node:domain:488:12)\n    at emitCloseNT (node:net:2321:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)","trace":[{"column":32,"file":"test\\user.test.ts","function":null,"line":53,"method":null,"native":false},{"column":6,"file":"node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":633,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":519,"method":"emit","native":false},{"column":12,"file":"node:domain","function":"Server.emit","line":488,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":2321,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":81,"method":null,"native":false}]}
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:40:28 +0000] "POST /api/v1/users/login HTTP/1.1" 401 50 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:40:28 +0000] "POST /api/v1/users/register HTTP/1.1" 400 50 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:40:28 +0000] "POST /api/v1/users/login HTTP/1.1" 401 50 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:40:28 +0000] "GET /api/v1/users HTTP/1.1" 404 47 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:44:34 +0000] "POST /api/v1/users/login HTTP/1.1" 401 50 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:44:34 +0000] "POST /api/v1/users/register HTTP/1.1" 400 50 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:44:34 +0000] "POST /api/v1/users/login HTTP/1.1" 401 50 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:44:34 +0000] "GET /api/v1/users HTTP/1.1" 404 47 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:45:37 +0000] "POST /api/v1/users/login HTTP/1.1" 401 50 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:45:37 +0000] "POST /api/v1/users/register HTTP/1.1" 400 50 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:45:37 +0000] "POST /api/v1/users/login HTTP/1.1" 401 50 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:45:37 +0000] "GET /api/v1/users HTTP/1.1" 404 47 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:46:59 +0000] "POST /api/v1/users/login HTTP/1.1" 401 50 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:46:59 +0000] "POST /api/v1/users/register HTTP/1.1" 400 50 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:46:59 +0000] "POST /api/v1/users/login HTTP/1.1" 401 50 "-" "node-superagent/3.8.3"
+
+info: ::ffff:127.0.0.1 - - [11/Nov/2024:09:46:59 +0000] "GET /api/v1/users HTTP/1.1" 404 47 "-" "node-superagent/3.8.3"
+

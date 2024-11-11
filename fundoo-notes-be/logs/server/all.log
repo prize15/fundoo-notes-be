@@ -433,3 +433,129 @@ error:
       method - POST 
       IP - ::1
      {"timestamp":"2024-11-10T13:18:53.071Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-11-11T05:12:26.486Z"}
+info: Connected to the database. {"timestamp":"2024-11-11T05:12:26.513Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-11-11T09:13:52.928Z"}
+info: Connected to the database. {"timestamp":"2024-11-11T09:13:52.966Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-11-11T09:22:20.305Z"}
+info: Connected to the database. {"timestamp":"2024-11-11T09:22:20.342Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-11-11T09:23:23.533Z"}
+info: Connected to the database. {"timestamp":"2024-11-11T09:23:23.568Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-11-11T09:31:09.457Z"}
+info: Connected to the database. {"timestamp":"2024-11-11T09:31:09.493Z"}
+info: Connected to the database. {"timestamp":"2024-11-11T09:36:14.148Z"}
+error: 
+      status - 401
+      message - Invalid email or password 
+      url - /api/v1/users/login 
+      method - POST 
+      IP - ::ffff:127.0.0.1
+     {"timestamp":"2024-11-11T09:36:14.200Z"}
+error: 
+      status - 400
+      message - "firstname" is required 
+      url - /api/v1/users/register 
+      method - POST 
+      IP - ::ffff:127.0.0.1
+     {"timestamp":"2024-11-11T09:36:14.228Z"}
+error: uncaughtException: expected '"firstname" is required' to equal 'User registered successfully'
+AssertionError: expected '"firstname" is required' to equal 'User registered successfully'
+    at Test.<anonymous> (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\test\user.test.ts:23:37)
+    at Test.assert (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\supertest\lib\test.js:181:6)
+    at Server.localAssert (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\supertest\lib\test.js:131:12)
+    at Object.onceWrapper (node:events:633:28)
+    at Server.emit (node:events:519:28)
+    at Server.emit (node:domain:488:12)
+    at emitCloseNT (node:net:2321:8)
+    at processTicksAndRejections (node:internal/process/task_queues:81:21) {"date":"Mon Nov 11 2024 15:06:14 GMT+0530 (India Standard Time)","error":{"actual":"\"firstname\" is required","expected":"User registered successfully","message":"expected '\"firstname\" is required' to equal 'User registered successfully'","name":"AssertionError","operator":"strictEqual","showDiff":true,"stack":"AssertionError: expected '\"firstname\" is required' to equal 'User registered successfully'\n    at Test.<anonymous> (C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be\\test\\user.test.ts:23:37)\n    at Test.assert (C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:633:28)\n    at Server.emit (node:events:519:28)\n    at Server.emit (node:domain:488:12)\n    at emitCloseNT (node:net:2321:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":74948},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be\\node_modules\\mocha\\bin\\mocha","-r","ts-node/register","test/**/*.ts"],"cwd":"C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":22905396,"external":25901025,"heapTotal":266702848,"heapUsed":232211208,"rss":316981248},"pid":13552,"uid":null,"version":"v20.15.1"},"stack":"AssertionError: expected '\"firstname\" is required' to equal 'User registered successfully'\n    at Test.<anonymous> (C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be\\test\\user.test.ts:23:37)\n    at Test.assert (C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be\\node_modules\\supertest\\lib\\test.js:181:6)\n    at Server.localAssert (C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be\\node_modules\\supertest\\lib\\test.js:131:12)\n    at Object.onceWrapper (node:events:633:28)\n    at Server.emit (node:events:519:28)\n    at Server.emit (node:domain:488:12)\n    at emitCloseNT (node:net:2321:8)\n    at processTicksAndRejections (node:internal/process/task_queues:81:21)","timestamp":"2024-11-11T09:36:14.242Z","trace":[{"column":37,"file":"C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be\\test\\user.test.ts","function":null,"line":23,"method":null,"native":false},{"column":6,"file":"C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be\\node_modules\\supertest\\lib\\test.js","function":"Test.assert","line":181,"method":"assert","native":false},{"column":12,"file":"C:\\Users\\abhia\\Github-Repos\\fundoo-notes-be\\fundoo-notes-be\\node_modules\\supertest\\lib\\test.js","function":"Server.localAssert","line":131,"method":"localAssert","native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":633,"method":"onceWrapper","native":false},{"column":28,"file":"node:events","function":"Server.emit","line":519,"method":"emit","native":false},{"column":12,"file":"node:domain","function":"Server.emit","line":488,"method":"emit","native":false},{"column":8,"file":"node:net","function":"emitCloseNT","line":2321,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"processTicksAndRejections","line":81,"method":null,"native":false}]}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-11-11T09:40:28.417Z"}
+info: Connected to the database. {"timestamp":"2024-11-11T09:40:28.508Z"}
+error: 
+      status - 401
+      message - Invalid email or password 
+      url - /api/v1/users/login 
+      method - POST 
+      IP - ::ffff:127.0.0.1
+     {"timestamp":"2024-11-11T09:40:28.567Z"}
+error: 
+      status - 400
+      message - "firstname" is required 
+      url - /api/v1/users/register 
+      method - POST 
+      IP - ::ffff:127.0.0.1
+     {"timestamp":"2024-11-11T09:40:28.591Z"}
+error: 
+      status - 401
+      message - Invalid email or password 
+      url - /api/v1/users/login 
+      method - POST 
+      IP - ::ffff:127.0.0.1
+     {"timestamp":"2024-11-11T09:40:28.606Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-11-11T09:44:22.603Z"}
+info: Connected to the database. {"timestamp":"2024-11-11T09:44:22.630Z"}
+info: Connected to the database. {"timestamp":"2024-11-11T09:44:34.046Z"}
+error: 
+      status - 401
+      message - Invalid email or password 
+      url - /api/v1/users/login 
+      method - POST 
+      IP - ::ffff:127.0.0.1
+     {"timestamp":"2024-11-11T09:44:34.102Z"}
+error: 
+      status - 400
+      message - "firstname" is required 
+      url - /api/v1/users/register 
+      method - POST 
+      IP - ::ffff:127.0.0.1
+     {"timestamp":"2024-11-11T09:44:34.127Z"}
+error: 
+      status - 401
+      message - Invalid email or password 
+      url - /api/v1/users/login 
+      method - POST 
+      IP - ::ffff:127.0.0.1
+     {"timestamp":"2024-11-11T09:44:34.142Z"}
+info: Connected to the database. {"timestamp":"2024-11-11T09:45:37.256Z"}
+error: 
+      status - 401
+      message - Invalid email or password 
+      url - /api/v1/users/login 
+      method - POST 
+      IP - ::ffff:127.0.0.1
+     {"timestamp":"2024-11-11T09:45:37.303Z"}
+error: 
+      status - 400
+      message - "firstname" is required 
+      url - /api/v1/users/register 
+      method - POST 
+      IP - ::ffff:127.0.0.1
+     {"timestamp":"2024-11-11T09:45:37.331Z"}
+error: 
+      status - 401
+      message - Invalid email or password 
+      url - /api/v1/users/login 
+      method - POST 
+      IP - ::ffff:127.0.0.1
+     {"timestamp":"2024-11-11T09:45:37.348Z"}
+info: Connected to the database. {"timestamp":"2024-11-11T09:46:59.770Z"}
+error: 
+      status - 401
+      message - Invalid email or password 
+      url - /api/v1/users/login 
+      method - POST 
+      IP - ::ffff:127.0.0.1
+     {"timestamp":"2024-11-11T09:46:59.815Z"}
+error: 
+      status - 400
+      message - "firstname" is required 
+      url - /api/v1/users/register 
+      method - POST 
+      IP - ::ffff:127.0.0.1
+     {"timestamp":"2024-11-11T09:46:59.839Z"}
+error: 
+      status - 401
+      message - Invalid email or password 
+      url - /api/v1/users/login 
+      method - POST 
+      IP - ::ffff:127.0.0.1
+     {"timestamp":"2024-11-11T09:46:59.857Z"}
