@@ -1,36 +1,57 @@
 import { Request, Response, NextFunction } from 'express';
 import NoteService from '../services/note.service';
 import { INote } from '../interfaces/note.interface';
+import redisClient from '../config/redis';
 
 class NoteController {
   private noteService = new NoteService();
 
-  // Get all notes for a specific user
+  // Get all notes for a specific user with caching
   public getAllNotes = async (req: Request, res: Response, next: NextFunction): Promise<Response> => {
     try {
-      console.log("User authenticated, fetching notes...");
       const userId = res.locals.user._id;
+      const cacheKey = `notes:${userId}`;
+
+      // Check Redis cache for notes data
+      const cachedNotes = await redisClient.get(cacheKey);
+      if (cachedNotes) {
+        return res.status(200).json(JSON.parse(cachedNotes));
+      }
+
+      // Fetch notes from database if not cached
       const notes = await this.noteService.getAllNotes(userId);
-      console.log("Notes fetched successfully:", notes);
-      return res.status(200).json(notes);  // Ensure returning the response object
+      await redisClient.setEx(cacheKey, 3600, JSON.stringify(notes)); // Cache for 1 hour
+
+      return res.status(200).json(notes);
     } catch (error) {
       next(error);
-      return res.status(500).json({ message: 'Internal server error' });  // In case the error isn't handled by the error handler
+      return res.status(500).json({ message: 'Internal server error' });
     }
   };
 
-  // Get note by note ID
+  // Get note by ID with caching
   public getNoteById = async (req: Request, res: Response, next: NextFunction): Promise<Response> => {
     try {
-      const noteId = req.params._id;
+      const noteId = req.params.noteId;
+      const cacheKey = `note:${noteId}`;
+
+      // Check Redis cache for specific note data
+      const cachedNote = await redisClient.get(cacheKey);
+      if (cachedNote) {
+        return res.status(200).json(JSON.parse(cachedNote));
+      }
+
+      // Fetch note from database if not cached
       const note = await this.noteService.getNoteById(noteId);
       if (!note) {
         return res.status(404).json({ code: 404, message: 'Note not found' });
       }
-      return res.status(200).json(note);  // Ensure returning the response object
+
+      await redisClient.setEx(cacheKey, 3600, JSON.stringify(note)); // Cache for 1 hour
+      return res.status(200).json(note);
     } catch (error) {
       next(error);
-      return res.status(500).json({ message: 'Internal server error' });  // In case the error isn't handled by the error handler
+      return res.status(500).json({ message: 'Internal server error' });
     }
   };
 
@@ -39,58 +60,87 @@ class NoteController {
     try {
       const noteData: INote = req.body;
       const newNote = await this.noteService.createNote(noteData);
-      return res.status(201).json(newNote);  // Ensure returning the response object
+
+      // Clear the cache for this user's notes list to ensure consistency
+      const userId = res.locals.user._id;
+      await redisClient.del(`notes:${userId}`);
+
+      return res.status(201).json(newNote);
     } catch (error) {
       next(error);
-      return res.status(500).json({ message: 'Internal server error' });  // In case the error isn't handled by the error handler
+      return res.status(500).json({ message: 'Internal server error' });
     }
   };
 
-  // Update a note
+  // Update a note and clear relevant cache
   public updateNote = async (req: Request, res: Response, next: NextFunction): Promise<Response> => {
     try {
       const noteId = req.params.noteId;
       const updatedNote = await this.noteService.updateNote(noteId, req.body);
-      return res.status(200).json(updatedNote);  // Ensure returning the response object
+
+      // Clear cache for this note and for the user's notes list
+      const userId = res.locals.user._id;
+      await redisClient.del(`note:${noteId}`);
+      await redisClient.del(`notes:${userId}`);
+
+      return res.status(200).json(updatedNote);
     } catch (error) {
       next(error);
-      return res.status(500).json({ message: 'Internal server error' });  // In case the error isn't handled by the error handler
+      return res.status(500).json({ message: 'Internal server error' });
     }
   };
 
-  // Delete a note
+  // Delete a note and clear relevant cache
   public deleteNote = async (req: Request, res: Response, next: NextFunction): Promise<Response> => {
     try {
       const noteId = req.params.noteId;
       await this.noteService.deleteNote(noteId);
-      return res.status(200).json({ message: 'Note moved to trash successfully' });  // Ensure returning the response object
+
+      // Clear cache for this note and for the user's notes list
+      const userId = res.locals.user._id;
+      await redisClient.del(`note:${noteId}`);
+      await redisClient.del(`notes:${userId}`);
+
+      return res.status(200).json({ message: 'Note moved to trash successfully' });
     } catch (error) {
       next(error);
-      return res.status(500).json({ message: 'Internal server error' });  // In case the error isn't handled by the error handler
+      return res.status(500).json({ message: 'Internal server error' });
     }
   };
 
-  // Archive a note
+  // Archive a note and clear relevant cache
   public archiveNote = async (req: Request, res: Response, next: NextFunction): Promise<Response> => {
     try {
       const noteId = req.params.noteId;
       const archivedNote = await this.noteService.archiveNote(noteId);
-      return res.status(200).json(archivedNote);  // Ensure returning the response object
+
+      // Clear cache for this note and for the user's notes list
+      const userId = res.locals.user._id;
+      await redisClient.del(`note:${noteId}`);
+      await redisClient.del(`notes:${userId}`);
+
+      return res.status(200).json(archivedNote);
     } catch (error) {
       next(error);
-      return res.status(500).json({ message: 'Internal server error' });  // In case the error isn't handled by the error handler
+      return res.status(500).json({ message: 'Internal server error' });
     }
   };
 
-  // Unarchive a note
+  // Unarchive a note and clear relevant cache
   public unarchiveNote = async (req: Request, res: Response, next: NextFunction): Promise<Response> => {
     try {
       const noteId = req.params.noteId;
       const unarchivedNote = await this.noteService.unarchiveNote(noteId);
-      return res.status(200).json(unarchivedNote);  // Ensure returning the response object
+
+      // Clear cache for this note and for the user's notes list
+      const userId = res.locals.user._id;
+      await redisClient.del(`note:${noteId}`);
+      await redisClient.del(`notes:${userId}`);
+
+      return res.status(200).json(unarchivedNote);
     } catch (error) {
       next(error);
-      return res.status(500).json({ message: 'Internal server error' });  // In case the error isn't handled by the error handler
+      return res.status(500).json({ message: 'Internal server error' });
     }
   };
 }
