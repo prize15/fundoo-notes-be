@@ -9,8 +9,10 @@ import routes from './routes';
 import Database from './config/database';
 import ErrorHandler from './middlewares/error.middleware';
 import Logger from './config/logger';
-
 import morgan from 'morgan';
+
+// Import the RabbitMQ service
+import RabbitMQService from './services/rabbitmq.service';
 
 class App {
   public app: Application;
@@ -32,6 +34,7 @@ class App {
     this.initializeMiddleWares();
     this.initializeRoutes();
     this.initializeDatabase();
+    this.initializeRabbitMQ();  // Initialize RabbitMQ
     this.initializeErrorHandlers();
 
     // Only start the server if we are not in a test environment
@@ -50,6 +53,16 @@ class App {
 
   public initializeDatabase(): void {
     this.db.initializeDatabase();
+  }
+
+  // Initialize RabbitMQ connection
+  public async initializeRabbitMQ(): Promise<void> {
+    try {
+      await RabbitMQService.connect();
+      this.logger.info('RabbitMQ connected successfully');
+    } catch (error) {
+      this.logger.error('Failed to connect to RabbitMQ', error);
+    }
   }
 
   public initializeRoutes(): void {

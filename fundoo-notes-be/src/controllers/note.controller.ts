@@ -2,6 +2,7 @@ import { Request, Response, NextFunction } from 'express';
 import NoteService from '../services/note.service';
 import { INote } from '../interfaces/note.interface';
 import redisClient from '../config/redis';
+import RabbitMQService from '../services/rabbitmq.service';
 
 class NoteController {
   private noteService = new NoteService();
@@ -55,7 +56,7 @@ class NoteController {
     }
   };
 
-  // Create a new note
+  // Create a new note and publish message to RabbitMQ
   public createNote = async (req: Request, res: Response, next: NextFunction): Promise<Response> => {
     try {
       const noteData: INote = req.body;
@@ -65,12 +66,17 @@ class NoteController {
       const userId = res.locals.user._id;
       await redisClient.del(`notes:${userId}`);
 
-      return res.status(201).json(newNote);
-    } catch (error) {
-      next(error);
-      return res.status(500).json({ message: 'Internal server error' });
-    }
-  };
+       // Send the new note data to RabbitMQ
+       const message = JSON.stringify({ action: 'create_note', data: newNote });
+       await RabbitMQService.sendMessage(message); // Updated to sendMessage
+
+       return res.status(201).json(newNote);
+   } catch (error) {
+       next(error);
+       return res.status(500).json({ message: 'Internal server error' });
+   }
+}
+
 
   // Update a note and clear relevant cache
   public updateNote = async (req: Request, res: Response, next: NextFunction): Promise<Response> => {
