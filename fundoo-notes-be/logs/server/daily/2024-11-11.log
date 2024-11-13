@@ -121,3 +121,6 @@ error:
       method - POST 
       IP - ::ffff:127.0.0.1
      {"timestamp":"2024-11-11T09:46:59.857Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-11-11T10:22:52.117Z"}
+info: Connected to Redis {"timestamp":"2024-11-11T10:22:52.152Z"}
+info: Connected to the database. {"timestamp":"2024-11-11T10:22:52.165Z"}
