@@ -15,3 +15,9 @@ error:
 info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-11-13T05:38:15.162Z"}
 info: Connected to Redis {"timestamp":"2024-11-13T05:38:15.191Z"}
 info: Connected to the database. {"timestamp":"2024-11-13T05:38:15.202Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-11-13T09:17:41.781Z"}
+info: Connected to Redis {"timestamp":"2024-11-13T09:17:41.820Z"}
+info: Connected to the database. {"timestamp":"2024-11-13T09:17:41.839Z"}
+info: Producer connected to RabbitMQ {"timestamp":"2024-11-13T09:17:41.868Z"}
+info: RabbitMQ connected successfully {"timestamp":"2024-11-13T09:17:41.869Z"}
+info: Message sent to queue: {"action":"create_note","data":{"isArchived":false,"isTrashed":false,"_id":"67346f8452ac893e7086793c","title":"rabbit note","content":"rabbit note","createdAt":"2024-11-13T09:21:08.303Z","updatedAt":"2024-11-13T09:21:08.303Z","__v":0}} {"timestamp":"2024-11-13T09:21:08.319Z"}
