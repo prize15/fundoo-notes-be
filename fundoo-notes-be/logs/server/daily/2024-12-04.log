@@ -1,0 +1,237 @@
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-12-04T05:31:18.934Z"}
+info: Connected to Redis {"timestamp":"2024-12-04T05:31:18.997Z"}
+info: Connected to the database. {"timestamp":"2024-12-04T05:31:19.029Z"}
+info: Producer connected to RabbitMQ {"timestamp":"2024-12-04T05:31:19.065Z"}
+info: RabbitMQ connected successfully {"timestamp":"2024-12-04T05:31:19.067Z"}
+info: Message sent to queue: {"action":"create_note","data":{"isArchived":false,"isTrashed":false,"_id":"674fe9be69d2702b3cb12ec3","title":"fundoo","content":"full of errors ","createdAt":"2024-12-04T05:33:50.582Z","updatedAt":"2024-12-04T05:33:50.582Z","__v":0}} {"timestamp":"2024-12-04T05:33:50.588Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Note"
+    at model.Query.exec (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/undefined 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2024-12-04T05:43:25.746Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-12-04T05:50:01.359Z"}
+info: Connected to Redis {"timestamp":"2024-12-04T05:50:01.390Z"}
+info: Connected to the database. {"timestamp":"2024-12-04T05:50:01.401Z"}
+info: Producer connected to RabbitMQ {"timestamp":"2024-12-04T05:50:01.420Z"}
+info: RabbitMQ connected successfully {"timestamp":"2024-12-04T05:50:01.421Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Note"
+    at model.Query.exec (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/undefined 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2024-12-04T05:50:17.277Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-12-04T06:02:03.337Z"}
+info: Connected to Redis {"timestamp":"2024-12-04T06:02:03.378Z"}
+info: Connected to the database. {"timestamp":"2024-12-04T06:02:03.393Z"}
+info: Producer connected to RabbitMQ {"timestamp":"2024-12-04T06:02:03.408Z"}
+info: RabbitMQ connected successfully {"timestamp":"2024-12-04T06:02:03.409Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Note"
+    at model.Query.exec (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/undefined 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2024-12-04T06:02:17.171Z"}
+error: 
+    status - 500 
+    message - CastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Note"
+    at model.Query.exec (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\query.js:4498:21)
+    at model.Query.Query.then (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/undefined 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2024-12-04T06:02:33.188Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-12-04T06:05:17.420Z"}
+info: Connected to Redis {"timestamp":"2024-12-04T06:05:17.442Z"}
+info: Connected to the database. {"timestamp":"2024-12-04T06:05:17.455Z"}
+info: Producer connected to RabbitMQ {"timestamp":"2024-12-04T06:05:17.468Z"}
+info: RabbitMQ connected successfully {"timestamp":"2024-12-04T06:05:17.469Z"}
+error: 
+    status - 500 
+    message - ReferenceError: mongoose is not defined
+    at NoteController.<anonymous> (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\controllers\note.controller.ts:89:23)
+    at Generator.next (<anonymous>)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\controllers\note.controller.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\controllers\note.controller.ts:4:12)
+    at NoteController.updateNote (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\controllers\note.controller.ts:84:112)
+    at Layer.handle [as handle_request] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\route.js:149:13)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:33:5
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/undefined 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2024-12-04T06:05:34.265Z"}
+error: 
+    status - 500 
+    message - ReferenceError: mongoose is not defined
+    at NoteController.<anonymous> (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\controllers\note.controller.ts:89:23)
+    at Generator.next (<anonymous>)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\controllers\note.controller.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\controllers\note.controller.ts:4:12)
+    at NoteController.updateNote (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\controllers\note.controller.ts:84:112)
+    at Layer.handle [as handle_request] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\route.js:149:13)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:33:5
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/notes/undefined 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2024-12-04T06:05:36.598Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-12-04T06:06:28.067Z"}
+info: Connected to Redis {"timestamp":"2024-12-04T06:06:28.093Z"}
+info: Connected to the database. {"timestamp":"2024-12-04T06:06:28.107Z"}
+info: Producer connected to RabbitMQ {"timestamp":"2024-12-04T06:06:28.119Z"}
+info: RabbitMQ connected successfully {"timestamp":"2024-12-04T06:06:28.121Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-12-04T06:06:50.014Z"}
+info: Connected to Redis {"timestamp":"2024-12-04T06:06:50.046Z"}
+info: Connected to the database. {"timestamp":"2024-12-04T06:06:50.061Z"}
+info: Producer connected to RabbitMQ {"timestamp":"2024-12-04T06:06:50.076Z"}
+info: RabbitMQ connected successfully {"timestamp":"2024-12-04T06:06:50.077Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-12-04T06:12:55.139Z"}
+info: Connected to Redis {"timestamp":"2024-12-04T06:12:55.161Z"}
+info: Connected to the database. {"timestamp":"2024-12-04T06:12:55.177Z"}
+info: Producer connected to RabbitMQ {"timestamp":"2024-12-04T06:12:55.187Z"}
+info: RabbitMQ connected successfully {"timestamp":"2024-12-04T06:12:55.188Z"}
+info: Message sent to queue: {"action":"create_note","data":{"isArchived":false,"isTrashed":false,"_id":"674ff7fc1c06a33c5856d931","title":"fundooo","content":"notesss","createdAt":"2024-12-04T06:34:36.026Z","updatedAt":"2024-12-04T06:34:36.026Z","__v":0}} {"timestamp":"2024-12-04T06:34:36.053Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-12-04T06:44:19.438Z"}
+info: Connected to Redis {"timestamp":"2024-12-04T06:44:19.460Z"}
+info: Connected to the database. {"timestamp":"2024-12-04T06:44:19.469Z"}
+info: Producer connected to RabbitMQ {"timestamp":"2024-12-04T06:44:19.489Z"}
+info: RabbitMQ connected successfully {"timestamp":"2024-12-04T06:44:19.490Z"}
+info: Connected to Redis {"timestamp":"2024-12-04T06:44:25.319Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-12-04T06:44:56.188Z"}
+info: Connected to Redis {"timestamp":"2024-12-04T06:44:56.211Z"}
+info: Connected to the database. {"timestamp":"2024-12-04T06:44:56.227Z"}
+info: Producer connected to RabbitMQ {"timestamp":"2024-12-04T06:44:56.243Z"}
+info: RabbitMQ connected successfully {"timestamp":"2024-12-04T06:44:56.244Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-12-04T06:45:15.671Z"}
+info: Connected to Redis {"timestamp":"2024-12-04T06:45:15.704Z"}
+info: Connected to the database. {"timestamp":"2024-12-04T06:45:15.722Z"}
+info: Producer connected to RabbitMQ {"timestamp":"2024-12-04T06:45:15.739Z"}
+info: RabbitMQ connected successfully {"timestamp":"2024-12-04T06:45:15.740Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-12-04T06:45:58.972Z"}
+info: Connected to Redis {"timestamp":"2024-12-04T06:45:58.994Z"}
+info: Connected to the database. {"timestamp":"2024-12-04T06:45:59.008Z"}
+info: Producer connected to RabbitMQ {"timestamp":"2024-12-04T06:45:59.021Z"}
+info: RabbitMQ connected successfully {"timestamp":"2024-12-04T06:45:59.022Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-12-04T06:46:30.996Z"}
+info: Connected to Redis {"timestamp":"2024-12-04T06:46:31.020Z"}
+info: Connected to the database. {"timestamp":"2024-12-04T06:46:31.038Z"}
+info: Producer connected to RabbitMQ {"timestamp":"2024-12-04T06:46:31.052Z"}
+info: RabbitMQ connected successfully {"timestamp":"2024-12-04T06:46:31.054Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-12-04T06:56:25.506Z"}
+info: Connected to Redis {"timestamp":"2024-12-04T06:56:25.530Z"}
+info: Connected to the database. {"timestamp":"2024-12-04T06:56:25.544Z"}
+info: Producer connected to RabbitMQ {"timestamp":"2024-12-04T06:56:25.559Z"}
+info: RabbitMQ connected successfully {"timestamp":"2024-12-04T06:56:25.561Z"}
+error: 
+      status - 401
+      message - Invalid email or password 
+      url - /api/v1/users/login 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-12-04T06:58:36.840Z"}
+info: Message sent to queue: {"action":"create_note","data":{"isArchived":false,"isTrashed":false,"_id":"674ffe0210355e4b94549f0c","title":"hello ","content":"welcome to fundoo notes 4/12","createdAt":"2024-12-04T07:00:18.982Z","updatedAt":"2024-12-04T07:00:18.982Z","__v":0}} {"timestamp":"2024-12-04T07:00:19.000Z"}
+info: Message sent to queue: {"action":"create_note","data":{"isArchived":false,"isTrashed":false,"_id":"674ffe1810355e4b94549f0f","title":"hello 1","content":"1","createdAt":"2024-12-04T07:00:40.728Z","updatedAt":"2024-12-04T07:00:40.728Z","__v":0}} {"timestamp":"2024-12-04T07:00:40.733Z"}
+info: Message sent to queue: {"action":"create_note","data":{"isArchived":false,"isTrashed":false,"_id":"674ffe1e10355e4b94549f11","title":"hello 2 ","content":"2","createdAt":"2024-12-04T07:00:46.500Z","updatedAt":"2024-12-04T07:00:46.500Z","__v":0}} {"timestamp":"2024-12-04T07:00:46.503Z"}
+info: Message sent to queue: {"action":"create_note","data":{"isArchived":false,"isTrashed":false,"_id":"674fff0f10355e4b94549f1d","title":"1","content":"1","createdAt":"2024-12-04T07:04:47.818Z","updatedAt":"2024-12-04T07:04:47.818Z","__v":0}} {"timestamp":"2024-12-04T07:04:47.823Z"}
+info: Message sent to queue: {"action":"create_note","data":{"isArchived":false,"isTrashed":false,"_id":"674fff1310355e4b94549f1f","title":"2","content":"2","createdAt":"2024-12-04T07:04:51.202Z","updatedAt":"2024-12-04T07:04:51.202Z","__v":0}} {"timestamp":"2024-12-04T07:04:51.205Z"}
+info: Message sent to queue: {"action":"create_note","data":{"isArchived":false,"isTrashed":false,"_id":"674fff1610355e4b94549f21","title":"3","content":"3","createdAt":"2024-12-04T07:04:54.706Z","updatedAt":"2024-12-04T07:04:54.706Z","__v":0}} {"timestamp":"2024-12-04T07:04:54.708Z"}
+info: Message sent to queue: {"action":"create_note","data":{"isArchived":false,"isTrashed":false,"_id":"674fff1a10355e4b94549f23","title":"4","content":"4","createdAt":"2024-12-04T07:04:58.629Z","updatedAt":"2024-12-04T07:04:58.629Z","__v":0}} {"timestamp":"2024-12-04T07:04:58.632Z"}
+info: Message sent to queue: {"action":"create_note","data":{"isArchived":false,"isTrashed":false,"_id":"6750002b10355e4b94549f2f","title":"1","content":"1","createdAt":"2024-12-04T07:09:31.497Z","updatedAt":"2024-12-04T07:09:31.497Z","__v":0}} {"timestamp":"2024-12-04T07:09:31.512Z"}
+info: Message sent to queue: {"action":"create_note","data":{"isArchived":false,"isTrashed":false,"_id":"6750003710355e4b94549f32","title":"2","content":"2","createdAt":"2024-12-04T07:09:43.831Z","updatedAt":"2024-12-04T07:09:43.831Z","__v":0}} {"timestamp":"2024-12-04T07:09:43.836Z"}
+info: Message sent to queue: {"action":"create_note","data":{"isArchived":false,"isTrashed":false,"_id":"6750003c10355e4b94549f34","title":"3","content":"3","createdAt":"2024-12-04T07:09:48.286Z","updatedAt":"2024-12-04T07:09:48.286Z","__v":0}} {"timestamp":"2024-12-04T07:09:48.290Z"}
+info: Message sent to queue: {"action":"create_note","data":{"isArchived":false,"isTrashed":false,"_id":"6750003f10355e4b94549f36","title":"4","content":"4","createdAt":"2024-12-04T07:09:51.599Z","updatedAt":"2024-12-04T07:09:51.599Z","__v":0}} {"timestamp":"2024-12-04T07:09:51.603Z"}
+info: Message sent to queue: {"action":"create_note","data":{"isArchived":false,"isTrashed":false,"_id":"6750004410355e4b94549f38","title":"5","content":"5","createdAt":"2024-12-04T07:09:56.114Z","updatedAt":"2024-12-04T07:09:56.114Z","__v":0}} {"timestamp":"2024-12-04T07:09:56.117Z"}
+info: Message sent to queue: {"action":"create_note","data":{"isArchived":false,"isTrashed":false,"_id":"6750004810355e4b94549f3a","title":"6","content":"6","createdAt":"2024-12-04T07:10:00.900Z","updatedAt":"2024-12-04T07:10:00.900Z","__v":0}} {"timestamp":"2024-12-04T07:10:00.903Z"}
+info: Message sent to queue: {"action":"create_note","data":{"isArchived":false,"isTrashed":false,"_id":"6750061610355e4b94549f4a","title":"11","content":"11","createdAt":"2024-12-04T07:34:46.424Z","updatedAt":"2024-12-04T07:34:46.424Z","__v":0}} {"timestamp":"2024-12-04T07:34:46.429Z"}
+info: Message sent to queue: {"action":"create_note","data":{"isArchived":false,"isTrashed":false,"_id":"6750061a10355e4b94549f4c","title":"12","content":"12","createdAt":"2024-12-04T07:34:50.040Z","updatedAt":"2024-12-04T07:34:50.040Z","__v":0}} {"timestamp":"2024-12-04T07:34:50.044Z"}
+info: Message sent to queue: {"action":"create_note","data":{"isArchived":false,"isTrashed":false,"_id":"6750061f10355e4b94549f4e","title":"13","content":"13","createdAt":"2024-12-04T07:34:55.796Z","updatedAt":"2024-12-04T07:34:55.796Z","__v":0}} {"timestamp":"2024-12-04T07:34:55.800Z"}
+info: Message sent to queue: {"action":"create_note","data":{"isArchived":false,"isTrashed":false,"_id":"6750062410355e4b94549f50","title":"14","content":"14","createdAt":"2024-12-04T07:35:00.341Z","updatedAt":"2024-12-04T07:35:00.341Z","__v":0}} {"timestamp":"2024-12-04T07:35:00.347Z"}
+error: 
+      status - 401
+      message - Invalid email or password 
+      url - /api/v1/users/login 
+      method - POST 
+      IP - ::1
+     {"timestamp":"2024-12-04T07:38:42.216Z"}
+info: Message sent to queue: {"action":"create_note","data":{"isArchived":false,"isTrashed":false,"_id":"6750072310355e4b94549f5d","title":"hello","content":"welcome","createdAt":"2024-12-04T07:39:15.420Z","updatedAt":"2024-12-04T07:39:15.420Z","__v":0}} {"timestamp":"2024-12-04T07:39:15.424Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-12-04T08:34:47.905Z"}
+info: Connected to Redis {"timestamp":"2024-12-04T08:34:47.942Z"}
+info: Connected to the database. {"timestamp":"2024-12-04T08:34:47.964Z"}
+info: Producer connected to RabbitMQ {"timestamp":"2024-12-04T08:34:47.989Z"}
+info: RabbitMQ connected successfully {"timestamp":"2024-12-04T08:34:47.991Z"}
+info: Message sent to queue: {"action":"create_note","data":{"isArchived":false,"isTrashed":false,"_id":"6750145f9914913bf4e0e6be","title":"21","content":"21","createdAt":"2024-12-04T08:35:43.586Z","updatedAt":"2024-12-04T08:35:43.586Z","__v":0}} {"timestamp":"2024-12-04T08:35:43.602Z"}
+info: Message sent to queue: {"action":"create_note","data":{"isArchived":false,"isTrashed":false,"_id":"675014d79914913bf4e0e6c5","title":"22","content":"22","createdAt":"2024-12-04T08:37:43.221Z","updatedAt":"2024-12-04T08:37:43.221Z","__v":0}} {"timestamp":"2024-12-04T08:37:43.228Z"}
+info: Message sent to queue: {"action":"create_note","data":{"isArchived":false,"isTrashed":false,"_id":"675014ff9914913bf4e0e6cb","title":"23","content":"23","createdAt":"2024-12-04T08:38:23.846Z","updatedAt":"2024-12-04T08:38:23.846Z","__v":0}} {"timestamp":"2024-12-04T08:38:23.855Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-12-04T11:13:18.133Z"}
+info: Connected to Redis {"timestamp":"2024-12-04T11:13:18.168Z"}
+info: Connected to the database. {"timestamp":"2024-12-04T11:13:18.202Z"}
+info: Producer connected to RabbitMQ {"timestamp":"2024-12-04T11:13:18.228Z"}
+info: RabbitMQ connected successfully {"timestamp":"2024-12-04T11:13:18.229Z"}
+error: 
+    status - 500 
+    message - TokenExpiredError: jwt expired
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\jsonwebtoken\verify.js:94:10)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:29:39
+    at Generator.next (<anonymous>)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:4:12)
+    at userAuth (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:18:20)
+    at Layer.handle [as handle_request] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:280:10) 
+    url - /api/v1/notes 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-12-04T11:13:43.154Z"}
+error: 
+    status - 500 
+    message - TokenExpiredError: jwt expired
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\jsonwebtoken\verify.js:94:10)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:29:39
+    at Generator.next (<anonymous>)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:4:12)
+    at userAuth (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:18:20)
+    at Layer.handle [as handle_request] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:280:10) 
+    url - /api/v1/notes 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-12-04T11:13:43.183Z"}

@@ -11,10 +11,12 @@ class NoteService {
   public createNote = async (noteData: INote): Promise<INote> => {
     return await Note.create(noteData);
   };
+
   // Get Note by ID
   public getNoteById = async (noteId: string): Promise<INote | null> => {
     return await Note.findById(noteId);
   };
+
   // Update a note
   public updateNote = async (noteId: string, noteData: Partial<INote>): Promise<INote | null> => {
     return await Note.findByIdAndUpdate(noteId, noteData, { new: true });
@@ -33,6 +35,16 @@ class NoteService {
   // Unarchive a note
   public unarchiveNote = async (noteId: string): Promise<INote | null> => {
     return await Note.findByIdAndUpdate(noteId, { isArchived: false }, { new: true });
+  };
+
+  // Toggle archive status
+  public toggleArchive = async (noteId: string, isArchived: boolean): Promise<INote | null> => {
+    return await Note.findByIdAndUpdate(noteId, { isArchived }, { new: true });
+  };
+
+  // Toggle trash status
+  public toggleTrash = async (noteId: string, isTrashed: boolean): Promise<INote | null> => {
+    return await Note.findByIdAndUpdate(noteId, { isTrashed }, { new: true });
   };
 }
 
