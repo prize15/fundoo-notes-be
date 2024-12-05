@@ -1,0 +1,196 @@
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-12-05T05:48:10.820Z"}
+info: Connected to Redis {"timestamp":"2024-12-05T05:48:10.849Z"}
+info: Connected to the database. {"timestamp":"2024-12-05T05:48:10.861Z"}
+info: Producer connected to RabbitMQ {"timestamp":"2024-12-05T05:48:10.889Z"}
+info: RabbitMQ connected successfully {"timestamp":"2024-12-05T05:48:10.890Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt malformed
+    at Object.module.exports [as verify] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\jsonwebtoken\verify.js:63:17)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:29:39
+    at Generator.next (<anonymous>)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:4:12)
+    at userAuth (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:18:20)
+    at Layer.handle [as handle_request] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:47:12) 
+    url - /api/v1/notes 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-12-05T06:25:17.705Z"}
+error: 
+    status - 500 
+    message - ValidationError: Note validation failed: title: Path `title` is required., content: Path `content` is required.
+    at model.Document.invalidate (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\document.js:2788:32)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\document.js:2580:17
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\mongoose\lib\schematype.js:1273:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11) 
+    url - /api/v1/notes 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-12-05T06:30:51.493Z"}
+info: Message sent to queue: {"action":"create_note","data":{"isArchived":false,"isTrashed":false,"_id":"675148a16cabd23c6c4f3eb9","title":"hello","content":"fundoo","createdAt":"2024-12-05T06:30:57.662Z","updatedAt":"2024-12-05T06:30:57.662Z","__v":0}} {"timestamp":"2024-12-05T06:30:57.680Z"}
+info: Message sent to queue: {"action":"create_note","data":{"isArchived":false,"isTrashed":false,"_id":"67514a936cabd23c6c4f3ebc","title":"#1","content":"#1","createdAt":"2024-12-05T06:39:15.409Z","updatedAt":"2024-12-05T06:39:15.409Z","__v":0}} {"timestamp":"2024-12-05T06:39:15.413Z"}
+info: Message sent to queue: {"action":"create_note","data":{"isArchived":false,"isTrashed":false,"_id":"67514a9e6cabd23c6c4f3ebe","title":"#2","content":"#2","createdAt":"2024-12-05T06:39:26.373Z","updatedAt":"2024-12-05T06:39:26.373Z","__v":0}} {"timestamp":"2024-12-05T06:39:26.377Z"}
+info: Message sent to queue: {"action":"create_note","data":{"isArchived":false,"isTrashed":false,"_id":"67514aaa6cabd23c6c4f3ec0","title":"#3","content":"#3","createdAt":"2024-12-05T06:39:38.107Z","updatedAt":"2024-12-05T06:39:38.107Z","__v":0}} {"timestamp":"2024-12-05T06:39:38.112Z"}
+info: Message sent to queue: {"action":"create_note","data":{"isArchived":false,"isTrashed":false,"_id":"67514ab36cabd23c6c4f3ec2","title":"#4","content":"#4","createdAt":"2024-12-05T06:39:47.250Z","updatedAt":"2024-12-05T06:39:47.250Z","__v":0}} {"timestamp":"2024-12-05T06:39:47.253Z"}
+info: Message sent to queue: {"action":"create_note","data":{"isArchived":false,"isTrashed":false,"_id":"67514abc6cabd23c6c4f3ec4","title":"#5","content":"#5\n","createdAt":"2024-12-05T06:39:57.001Z","updatedAt":"2024-12-05T06:39:57.001Z","__v":0}} {"timestamp":"2024-12-05T06:39:57.004Z"}
+info: Message sent to queue: {"action":"create_note","data":{"isArchived":false,"isTrashed":false,"_id":"67514ac36cabd23c6c4f3ec6","title":"#6","content":"#6","createdAt":"2024-12-05T06:40:03.583Z","updatedAt":"2024-12-05T06:40:03.583Z","__v":0}} {"timestamp":"2024-12-05T06:40:03.586Z"}
+info: Message sent to queue: {"action":"create_note","data":{"isArchived":false,"isTrashed":false,"_id":"67514acb6cabd23c6c4f3ec8","title":"#7","content":"#7","createdAt":"2024-12-05T06:40:11.420Z","updatedAt":"2024-12-05T06:40:11.420Z","__v":0}} {"timestamp":"2024-12-05T06:40:11.424Z"}
+info: Message sent to queue: {"action":"create_note","data":{"isArchived":false,"isTrashed":false,"_id":"67514ad16cabd23c6c4f3eca","title":"#8","content":"#8","createdAt":"2024-12-05T06:40:17.802Z","updatedAt":"2024-12-05T06:40:17.802Z","__v":0}} {"timestamp":"2024-12-05T06:40:17.806Z"}
+error: 
+    status - 500 
+    message - TokenExpiredError: jwt expired
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\jsonwebtoken\verify.js:94:10)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:29:39
+    at Generator.next (<anonymous>)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:4:12)
+    at userAuth (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:18:20)
+    at Layer.handle [as handle_request] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:280:10) 
+    url - /api/v1/notes 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-12-05T08:25:43.656Z"}
+error: 
+    status - 500 
+    message - TokenExpiredError: jwt expired
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\jsonwebtoken\verify.js:94:10)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:29:39
+    at Generator.next (<anonymous>)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:4:12)
+    at userAuth (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:18:20)
+    at Layer.handle [as handle_request] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:280:10) 
+    url - /api/v1/notes 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-12-05T08:25:43.668Z"}
+error: 
+    status - 500 
+    message - TokenExpiredError: jwt expired
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\jsonwebtoken\verify.js:94:10)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:29:39
+    at Generator.next (<anonymous>)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:4:12)
+    at userAuth (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:18:20)
+    at Layer.handle [as handle_request] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:280:10) 
+    url - /api/v1/notes 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-12-05T08:25:46.964Z"}
+error: 
+    status - 500 
+    message - TokenExpiredError: jwt expired
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\jsonwebtoken\verify.js:94:10)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:29:39
+    at Generator.next (<anonymous>)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:4:12)
+    at userAuth (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:18:20)
+    at Layer.handle [as handle_request] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:280:10) 
+    url - /api/v1/notes 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-12-05T08:25:46.974Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-12-05T08:25:59.787Z"}
+info: Connected to Redis {"timestamp":"2024-12-05T08:25:59.813Z"}
+info: Connected to the database. {"timestamp":"2024-12-05T08:25:59.824Z"}
+info: Producer connected to RabbitMQ {"timestamp":"2024-12-05T08:25:59.854Z"}
+info: RabbitMQ connected successfully {"timestamp":"2024-12-05T08:25:59.855Z"}
+error: 
+    status - 500 
+    message - TokenExpiredError: jwt expired
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\jsonwebtoken\verify.js:94:10)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:29:39
+    at Generator.next (<anonymous>)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:4:12)
+    at userAuth (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:18:20)
+    at Layer.handle [as handle_request] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:280:10) 
+    url - /api/v1/notes 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-12-05T08:26:08.615Z"}
+error: 
+    status - 500 
+    message - TokenExpiredError: jwt expired
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\jsonwebtoken\verify.js:94:10)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:29:39
+    at Generator.next (<anonymous>)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:4:12)
+    at userAuth (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\src\middlewares\auth.middleware.ts:18:20)
+    at Layer.handle [as handle_request] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\abhia\Github-Repos\fundoo-notes-be\fundoo-notes-be\node_modules\express\lib\router\index.js:280:10) 
+    url - /api/v1/notes 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-12-05T08:26:08.627Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-12-05T08:29:11.757Z"}
+info: Connected to Redis {"timestamp":"2024-12-05T08:29:11.783Z"}
+info: Connected to the database. {"timestamp":"2024-12-05T08:29:11.797Z"}
+info: Producer connected to RabbitMQ {"timestamp":"2024-12-05T08:29:11.813Z"}
+info: RabbitMQ connected successfully {"timestamp":"2024-12-05T08:29:11.814Z"}
